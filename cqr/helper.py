@@ -7,7 +7,7 @@ from functools import partial
 from cqr import tune_params_cv
 from nonconformist.cp import IcpRegressor
 from nonconformist.base import RegressorAdapter
-from skgarden import RandomForestQuantileRegressor
+from quantile_forest import RandomForestQuantileRegressor
 
 if torch.cuda.is_available():
     device = "cuda:0"
